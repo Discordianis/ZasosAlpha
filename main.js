@@ -750,10 +750,8 @@ function createNewestRanobe(data){
         newestImg.src = jsonNewestArrays.cover.default;
         newestImg.alt = jsonNewestArrays.cover.filename;
         newestImgDiv.appendChild(newestImg);
-        if (jsonNewestArrays.rus_name !== '' || jsonNewestArrays.rus_name !== null) {
-            newestTitle.textContent = jsonNewestArrays.rus_name
-        }
-        else {
+        newestTitle.textContent = jsonNewestArrays.rus_name
+        if (jsonNewestArrays.rus_name === '' || jsonNewestArrays.rus_name === null) {
             newestTitle.textContent = jsonNewestArrays.name;
         }
         newestCountry.textContent = jsonNewestArrays.type.label;
