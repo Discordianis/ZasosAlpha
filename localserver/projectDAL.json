@@ -1,0 +1,114 @@
+{
+  "data": {
+    "dateAlife": [
+      {
+        "id": 1,
+        "name": "Date A Life: Me. My Dream. My Ideal",
+        "rus_name": "Рандеву с Жизнью: Я. Моя Мечта. Мой Идеал",
+        "eng_name": "Date A Life: Me. My Dream. My Ideal",
+        "slug": "date-a-life-v1",
+        "slug_url": "001--date-a-life",
+        "cover": {
+          "filename": "date-a-live-v1",
+          "thumbnail": "https://i.imgur.com/c1wPCiu.jpeg",
+          "default": "https://i.imgur.com/c1wPCiu.jpeg"
+        },
+        "ageRestriction": {
+          "id": 1,
+          "label": "16+"
+        },
+        "site": 3,
+        "type": {
+          "id": 12,
+          "label": "Россия"
+        },
+        "rating": {
+          "average": "0",
+          "averageFormated": "0",
+          "votes": 0,
+          "votesFormated": "0",
+          "user": 0
+        },
+        "last_item_at": "2024-04-21T14:59:20.000000Z",
+        "model": "ranobe",
+        "status": {
+          "id": 1,
+          "label": "Онгоинг"
+        },
+        "releaseDateString": ""
+      },
+	  {
+	  "id": 2,
+        "name": "Date A Life 2: Endless Masquerade",
+        "rus_name": "Рандеву с Жизнью 2: Бесконечный Маскарад",
+        "eng_name": "Date A Life 2: Endless Masquerade",
+        "slug": "date-a-life-v2",
+        "slug_url": "002--date-a-life",
+        "cover": {
+          "filename": "date-a-live-v2",
+          "thumbnail": "https://i.imgur.com/3ZGMDiq.png",
+          "default": "https://i.imgur.com/3ZGMDiq.png"
+        },
+        "ageRestriction": {
+          "id": 1,
+          "label": "16+"
+        },
+        "site": 3,
+        "type": {
+          "id": 12,
+          "label": "Россия"
+        },
+        "rating": {
+          "average": "0",
+          "averageFormated": "0",
+          "votes": 0,
+          "votesFormated": "0",
+          "user": 0
+        },
+        "last_item_at": "2024-04-21T14:59:20.000000Z",
+        "model": "ranobe",
+        "status": {
+          "id": 1,
+          "label": "Онгоинг"
+        },
+        "releaseDateString": ""
+      },
+	  {
+	  "id": 3,
+        "name": "Date A Life 3: The Last Chapter and Eternity",
+        "rus_name": "Рандеву с Жизнью 3: Последняя Глава и Вечность",
+        "eng_name": "Date A Life 3: The Last Chapter and Eternity",
+        "slug": "date-a-life-v3",
+        "slug_url": "003--date-a-life",
+        "cover": {
+          "filename": "date-a-live-v3",
+          "thumbnail": "https://i.imgur.com/ahWE1AD.png",
+          "default": "https://i.imgur.com/ahWE1AD.png"
+        },
+        "ageRestriction": {
+          "id": 1,
+          "label": "16+"
+        },
+        "site": 3,
+        "type": {
+          "id": 12,
+          "label": "Россия"
+        },
+        "rating": {
+          "average": "0",
+          "averageFormated": "0",
+          "votes": 0,
+          "votesFormated": "0",
+          "user": 0
+        },
+        "last_item_at": "2024-04-21T14:59:20.000000Z",
+        "model": "ranobe",
+        "status": {
+          "id": 1,
+          "label": "Онгоинг"
+        },
+        "releaseDateString": ""
+		}
+				]
+		}
+}

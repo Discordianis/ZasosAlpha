@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #3d2a3b;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #41163b;
+    border-radius: 15px;
+}
+
+html:root{
+    --href-color: #ffffff;
+    --hover-color: #c06c11;
+    --active-color: #18bd7e;
+    --bg-hrefanime-color: #54194F35;
+    --bg-hrefanime-color-hover: #73246D35;
+    --main-bg: #3d103b3d;
+    --search-color: #ab32a142;
+}
+
+body{
+    background: linear-gradient(rgb(14, 14, 14) 1%, rgb(24, 18, 18) 80%);
+    color: white;
+    height: 100vh;
+}
+
+a{
+    color: var(--href-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    color: var(--hover-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+header {
+    margin-bottom: 15px;
+    height: 70px;
+    background: #1e041cbd;
+    backdrop-filter: blur(10px) brightness(0.5);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-box:before{
+    content: "🔎︎";
+    margin: 0 10px;
+}
+
+.input-box {
+    background: var(--search-color);
+    border-radius: 15px;
+}
+
+.input-search:before{
+    content: "🔎︎";
+    margin: 0 10px;
+    display: flex;
+    justify-items: center;
+}
+
+input#input-text-1 {
+    border-radius: 10px;
+    border: none;
+    font-size: 100%;
+    padding: 10px;
+    background: none;
+    width: 50vw;
+    transition: all 0.3s ease-in-out;
+}
+
+input#input-text-1:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 770px) {
+    input#input-text-1 {
+        width: 30vw;
+        transition: all 0.1ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    input#input-text-1 {
+        width: 15vw;
+        transition: all 0.1ms ease-in-out;
+    }
+}
+
+.main-bg{
+    background: var(--main-bg);
+    margin: 0 50px;
+    padding: 0 15px 20px;
+    height: 875px;
+    border-radius: 15px;
+}
+
+.home-button > a > img{
+    height: 50px;
+    width: auto;
+}
+
+.home-button-href{
+    display: flex;
+    width: min-content;
+}
+
+.home-button{
+    width: min-content;
+    margin-left: 10px;
+}
+
+.profile-button > a{
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border: hotpink 1px solid;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.headers{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.profile-button > a:after {
+    content: "▼";
+    margin-left: 5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.profile-button >a:hover:after{
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.profile-button > a > img{
+    height: 40px;
+    width: auto;
+    background-position: left;
+    margin: 0 10px 0 0;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.profile-button > a:hover{
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.dal-vol1 > a > img, .dal-vol2 > a > img, .dal-vol3 > a > img{
+    height: 500px;
+    width: auto;
+}
+
+.volumes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.links-cr{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+        right: 0;
+        font: bold 11px 'Comfortaa';
+        position: absolute;
+        color: rgba(255, 255, 255, 0.51);
+}
+
+.links-cr > a{
+    margin: 0 5px;
+    font: 11px 'Comfortaa';
+    color: rgba(105, 74, 94, 0.75);
+}
+
+.links-cr > a:hover{
+    color: var(--hover-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.b-footer{
+    position: relative;
+}
+
+.b-footer-nth{
+    position: relative;
+    top: 80vh;
+}
+
+.dal-vol1 > a, .dal-vol2 > a, .dal-vol3 > a{
+    height: 100%;
+    width: min-content;
+    margin: 30px 20px;
+    padding: 20px;
+    display: block;
+    background: var(--bg-hrefanime-color);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.dal-vol1 > a:hover, .dal-vol2 > a:hover, .dal-vol3 > a:hover{
+    transform: scale(1.05);
+    background: var(--bg-hrefanime-color-hover);
+}
+
+.dal-vol1 > a > div > span, .dal-vol2 > a > div > span, .dal-vol3 > a > div > span{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dal-vol1 > a > div > span:nth-child(1), .dal-vol2 > a > div > span:nth-child(1), .dal-vol3 > a > div > span:nth-child(1){
+    font-family: monospace;
+}
+
+.dal-vol1 > a > div > span:nth-child(2), .dal-vol2 > a > div > span:nth-child(2), .dal-vol3 > a > div > span:nth-child(2){
+    font-family: cursive;
+}
+
+.dal-vol1 > a > div, .dal-vol2 > a > div, .dal-vol3 > a > div{
+    margin-top: 5px;
+}
+
+.page-title{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.page-title > h1{
+    background: var(--bg-hrefanime-color);
+    border-radius: 15px;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 5px 0 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1445px){
+    .main-bg{
+        height: 1400px;
+        margin: 0 50px;
+        padding: 0 15px 20px;
+    }
+}
+
+@media screen and (max-width: 1445px){
+    body{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1445px){
+    .b-footer{
+        position: relative;
+        top: 530px;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .b-footer{
+        position: relative;
+        top: 1185px;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .main-bg{
+        height: 2050px;
+        margin: 0 50px;
+        padding: 0 15px 20px;
+    }
+}
+
+

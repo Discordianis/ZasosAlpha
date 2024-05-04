@@ -1,0 +1,387 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #3d2a3b;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #41163b;
+    border-radius: 15px;
+}
+
+html:root{
+    --href-color: #ffffff;
+    --hover-color: #c06c11;
+    --active-color: #18bd7e;
+    --bg-hrefanime-color: #54194F35;
+    --bg-hrefanime-color-hover: #73246D35;
+    --main-bg: #3d103b3d;
+    --search-color: #ab32a142;
+}
+
+body{
+    background: linear-gradient(rgb(14, 14, 14) 1%, rgb(24, 18, 18) 80%);
+    color: white;
+    height: 100%;
+}
+
+a{
+    color: var(--href-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    color: var(--hover-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+header {
+    margin-bottom: 15px;
+    height: 70px;
+    width: 100%;
+    background: #1e041cbd;
+    backdrop-filter: blur(10px) brightness(0.5);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (orientation: portrait) {
+    header {
+        margin-bottom: 15px;
+        height: 125px;
+        width: 100%;
+        background: #1e041cbd;
+        backdrop-filter: blur(10px) brightness(0.5);
+        display: flex;
+        flex-flow: column;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.input-text {
+    display: flex;
+}
+
+@media (orientation: portrait) {
+    .input-text {
+        display: flex;
+        position: relative;
+        top: 4.5em;
+        width: 100%;
+    }
+}
+
+.input-box {
+    background: var(--search-color);
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.input-search{
+    display: flex;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    align-items: center;
+}
+
+.input-search:before{
+    content: "🔎︎";
+}
+
+input#input-text-1 {
+        border-radius: 10px;
+        border: none;
+        padding: 10px 25px;
+        background: none;
+        width: 50vw;
+        transition: all 0.3s ease-in-out;
+        font-size: 16px;
+}
+
+@media (orientation: portrait) {
+    .input-box {
+        width: inherit;
+        margin: 0 75px
+    }
+}
+
+@media (orientation: portrait) {
+    input#input-text-1{
+        font-size: 20px;
+        width: inherit;
+    }
+}
+
+    input#input-text-1:focus{
+        outline: none;
+    }
+
+    .main-bg{
+        background: var(--main-bg);
+        margin: 0 50px 20px 50px;
+        padding: 0 15px 20px;
+        border-radius: 15px;
+    }
+
+    .home-button > a > img{
+        height: 50px;
+        width: auto;
+    }
+
+    .home-button-href{
+        display: flex;
+        width: min-content;
+    }
+
+    .home-button{
+        width: min-content;
+        margin-left: 10px;
+    }
+
+    @media (orientation: portrait){
+        .home-button {
+            width: min-content;
+            margin: 10px 0 0 10px;
+        }
+    }
+
+    .profile-button > a{
+        color: white;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        border: hotpink 1px solid;
+        border-radius: 10px;
+        position: relative;
+        padding: 5px;
+        margin: 10px;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+@media (orientation: portrait) {
+    .profile-button {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    .home-button {
+        position: absolute;
+        left: 0;
+    }
+}
+
+    .headers{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .profile-button > a:after {
+        content: "▼";
+        margin-left: 5px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .profile-button >a:hover:after{
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .profile-button > a > img{
+        height: 40px;
+        width: auto;
+        background-position: left;
+        margin: 0 10px 0 0;
+        border-radius: 100px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .profile-button > a:hover{
+        border: 1px solid white;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .image-anime > img{
+        height: 300px;
+        width: auto;
+    }
+
+    .image-anime{
+        display: block;
+    }
+
+    .name-title{
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        position: relative;
+        top: 5px;
+        font-size: 1.2em;
+    }
+
+    .ongoings > a, .top-anime > a, .secret-block > a{
+        display: grid;
+        padding: 15px;
+        position: relative;
+        width: min-content;
+        background: var(--bg-hrefanime-color);
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    .ongoings > a:hover, .top-anime > a:hover, .secret-block >a:hover{
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transform: scale(1.05);
+        background: var(--bg-hrefanime-color-hover);
+    }
+
+    .ongoings, .top-anime{
+        display: flex;
+        gap: 15px 15%;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 20%;
+    }
+
+    .categories-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ongoings-name, .top-anime-name, .secret-category{
+        margin: 20px 0 15px;
+        background: var(--bg-hrefanime-color);
+        border-radius: 30px;
+        padding: 5px 0 5px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .secret-block{
+        display: flex;
+        justify-content: center;
+    }
+
+    .secret-hover{
+        opacity: 0;
+        transition: all 5s ease-in-out;
+        width: 100%;
+    }
+
+    .secret-hover:hover{
+        opacity: 1;
+        transition: all 12s ease-in-out;
+    }
+
+    .secret-block > a > img{
+        height: 300px;
+    }
+
+    .secret-block > a > span{
+        display: block;
+        font-size: 1.2em;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        top: 5px;
+    }
+
+    .b-footer{
+        margin-top: 50px;
+    }
+
+    .links-cr{
+        display: flex;
+        justify-content: center;
+    }
+
+    .b-footer .copyright {
+        right: 65px;
+        font: bold 11px 'Comfortaa';
+        position: absolute;
+        color: rgba(255, 255, 255, 0.51);
+    }
+
+    .links-cr > a{
+        margin: 0 5px;
+        font: 11px 'Comfortaa';
+        color: rgba(105, 74, 94, 0.75);
+    }
+
+    .links-cr > a:hover{
+        color: var(--hover-color);
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+
+    @media screen and (max-width: 680px){
+        .image-anime > img{
+            height: 150px;
+        }
+        .ongoings > a, .top-anime >a, .secret-block>a{
+            margin: 0 5px 15px;
+        }
+    }
+
+    @media screen and (max-width: 520px){
+        .image-anime > img{
+            height: 100px;
+        }
+        .ongoings > a, .top-anime >a, .secret-block>a{
+            margin: 0 0 15px;
+        }
+    }
+
+    @media screen and (max-width: 360px){
+        .image-anime > img{
+            height: 80px;
+        }
+        .ongoings > a, .top-anime >a, .secret-block>a{
+            margin: 0 0 15px;
+        }
+    }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Тесты 3</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+        <link href="styles/style-loading.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    </head>
+        <body>
+            <header>
+                <div class="home-button">
+                    <a class="home-button-href" href="index.html"><img src="images/home-button.png" alt="Zasoser Site"/></a>
+                </div>
+                <div class="input-text">
+                    <label class="input-box">
+                    <input id="input-text-1" type="text" placeholder="Поиск...">
+                        <span class="input-search"></span>
+                    </label>
+                </div>
+                <div class="profile-button">
+                    <a class="profile-button-href" href="profile/profile.html"><img src="images/profile-avatar.jpg" alt="MrZaxter" /><span class="nickname">MrZaxter</span></a>
+                </div>
+            </header>
+            <section class="main-bg">
+            <div class="main-menu">
+                <div class="categories-menu">
+                    <div class="ongoings-name">Сегодняший топ</div>
+                    <div class="ongoings" id="ongoings"></div>
+                    <div class="last-updates-title">Последние обновления</div>
+                        <div class="main-page-menu">
+                            <div class="fresh-updates main-page-flex" id="fresh-updates">
+                                <p class="titles-main-menu">Свежие обновления</p>
+                                <div></div>
+                            </div>
+                            <div class="other-main-menu">
+                                <div class="forum-themes main-page-flex">
+                                    <a class="titles-main-menu">Последние темы форума</a>
+                                    <div></div>
+                                </div>
+                                <div class="reviews-ranobe main-page-flex">
+                                    <a class="titles-main-menu">Последние отзывы</a>
+                                    <div></div>
+                                </div>
+                                <div class="collections-ranobe main-page-flex">
+                                    <a class="titles-main-menu">Последние коллекции</a>
+                                    <div></div>
+                                </div>
+                                <div class="weekly-top-users main-page-flex">
+                                    <a class="titles-main-menu">Топ активных пользователей недели</a>
+                                    <div></div>
+                                </div>
+                                <div class="newest-ranobe main-page-flex">
+                                    <a class="titles-main-menu">Новинки</a>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="project-DAL-name">Рекомендуется к прочтению</div>
+                    <div class="project-DAL" id="project-DAL"></div>
+                </div>
+            </div>
+                <footer class="b-footer">
+                    <div class="copyright">© Zasooser.com
+                        <span class="date-cr">2024-????</span>
+                    </div>
+                    <div class="links-cr">
+                        <a href="https://shikimori.one">Shikimori</a>
+                        <a href="https://vk.com/discordianis">vk</a>
+                    </div>
+                </footer>
+            </section>
+        </body>
+    <script src="main.js" type="module"></script>
+</html>

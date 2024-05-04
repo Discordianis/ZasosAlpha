@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ab355ce3-02a2-4018-aac1-f6988c84fdd3" name="zass">
+        <fileTransfer accessType="LOCAL" port="0">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="51ade351-36bb-48b3-9913-ad057befb35d" name="clod" url="https://zasosranobelib.pages.dev">
+        <fileTransfer mountedRoot="C:\HackerLand\FrontEnd\other codes\tests\sho" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
