@@ -271,9 +271,8 @@ input#input-text-1:focus {
 .ongoings > a:hover, .project-DAL > a:hover {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
+  transform: scale(1.03);
   background: var(--bg-hrefanime-color-hover);
-  width: 100%;
 }
 
 .fresh-updates > div > div{
@@ -908,7 +907,7 @@ input#input-text-1:focus {
   line-height: 20px;
   height: fit-content;
   margin: 0 15px;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .project-DAL > a > span > img{
